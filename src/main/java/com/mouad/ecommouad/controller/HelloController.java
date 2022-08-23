@@ -8,8 +8,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 @Controller
 public class HelloController {
     @GetMapping("/")
-    public String helloPage(@RequestParam(value = "name", defaultValue = "world", required = true)String name, Model model){
+    public String helloPage(@RequestParam(value = "name", defaultValue = "najlae", required = true)String name, Model model){
         model.addAttribute("name", name);
-        return "hello";
+        return "index";
     }
 }
